@@ -1,0 +1,9 @@
+[package]
+name = "cryptocompare"
+version = "0.1.0"
+authors = ["hekrause <hekrause@htwg-konstanz.de>"]
+
+[dependencies]
+reqwest = "0.8.1"
+serde_json = "1.0.8"
+time = "0.1"
