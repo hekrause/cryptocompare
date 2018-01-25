@@ -2,8 +2,8 @@
 language: rust
 sudo: false
 rust:
-  - stable
   - nightly
+  - stable
 env:
   - DENYWARNINGS=
   - DENYWARNINGS=1
@@ -12,5 +12,5 @@ matrix:
     - rust: nightly
       env: BENCHMARK=1
   allow_failures:
-    - rust: nightly
+    - rust: stable
 
