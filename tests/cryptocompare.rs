@@ -72,3 +72,11 @@ fn test_parse_json_to_vector() {
     let vector = cryptocompare::parse_json_to_vector(result).unwrap();
     assert_eq!(vector.len(), (limit + 1) as usize)
 }
+
+#[test]
+fn test_parse_json_to_float() {
+    let option: Options = Options {exchanges: "Bitfinex", try_conversion: true};
+    let result = cryptocompare::get_price("IOT", "ETH", &option).unwrap();
+    let price = cryptocompare::parse_json_to_float(result, "ETH");
+    assert_eq!(price.is_err(), false);
+}

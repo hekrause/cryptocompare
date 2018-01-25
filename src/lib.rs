@@ -138,3 +138,8 @@ pub fn parse_json_to_vector(object: Value) -> Result<Vec<Dataset>, Box<::std::op
     }
     Ok(vector)
 }
+
+pub fn parse_json_to_float(object: Value, key: &str) -> Result<f64, Box<::std::option::NoneError>> {
+    let value = object.as_object()?[key].as_f64()?;
+    Ok(value)
+}
