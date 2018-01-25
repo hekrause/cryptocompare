@@ -1,5 +1,7 @@
 
 /target/
+!/target/doc/cryptocompare/index.html
+
 **/*.rs.bk
 Cargo.lock
 
