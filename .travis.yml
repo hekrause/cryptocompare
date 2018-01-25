@@ -1,0 +1,16 @@
+---
+language: rust
+sudo: false
+rust:
+  - stable
+  - nightly
+env:
+  - DENYWARNINGS=
+  - DENYWARNINGS=1
+matrix:
+  include:
+    - rust: nightly
+      env: BENCHMARK=1
+  allow_failures:
+    - rust: nightly
+
