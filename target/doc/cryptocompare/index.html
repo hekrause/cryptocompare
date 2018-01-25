@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cryptocompare` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cryptocompare">
+
+    <title>cryptocompare - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        <div class="sidebar-menu">&#9776;</div>
+        
+        <p class='location'>Crate cryptocompare</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#functions">Functions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'cryptocompare', ty: 'mod', relpath: '../'};</script></div>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>cryptocompare</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/cryptocompare/lib.rs.html#2-262' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><h1 id="general" class="section-header"><a href="#general">General</a></h1>
+<p>An rust API-Wrapper for the CryptoCompare API.</p>
+<p>Link to www.cryptocompare.com/api/ <a href="https://www.cryptocompare.com/api/">API</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dataset.html"
+                                  title='struct cryptocompare::Dataset'>Dataset</a></td>
+                           <td class='docblock-short'>
+                                <p>An object with trading info.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Options.html"
+                                  title='struct cryptocompare::Options'>Options</a></td>
+                           <td class='docblock-short'>
+                                <p>Informations for the request.</p>
+
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_coin_list.html"
+                                  title='fn cryptocompare::get_coin_list'>get_coin_list</a></td>
+                           <td class='docblock-short'>
+                                <p>Get general info for all the coins available via CryptoCompare.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_history_day.html"
+                                  title='fn cryptocompare::get_history_day'>get_history_day</a></td>
+                           <td class='docblock-short'>
+                                <p>Get open, high, low, close, volumefrom and volumeto daily historical data.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_history_hour.html"
+                                  title='fn cryptocompare::get_history_hour'>get_history_hour</a></td>
+                           <td class='docblock-short'>
+                                <p>Get open, high, low, close, volumefrom and volumeto from the each hour historical data.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_history_minute.html"
+                                  title='fn cryptocompare::get_history_minute'>get_history_minute</a></td>
+                           <td class='docblock-short'>
+                                <p>Get open, high, low, close, volumefrom and volumeto from the each minute historical data.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_price.html"
+                                  title='fn cryptocompare::get_price'>get_price</a></td>
+                           <td class='docblock-short'>
+                                <p>Get the latest price for a list of one or more currencies.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_price_historical.html"
+                                  title='fn cryptocompare::get_price_historical'>get_price_historical</a></td>
+                           <td class='docblock-short'>
+                                <p>Get the price of any cryptocurrency in any other currency that you need at a given timestamp.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_price_multi.html"
+                                  title='fn cryptocompare::get_price_multi'>get_price_multi</a></td>
+                           <td class='docblock-short'>
+                                <p>Get a matrix of currency prices.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.get_price_multi_full.html"
+                                  title='fn cryptocompare::get_price_multi_full'>get_price_multi_full</a></td>
+                           <td class='docblock-short'>
+                                <p>Get all the current trading info of any list of cryptocurrencies in any other currency that you need.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.parse_json_to_vector.html"
+                                  title='fn cryptocompare::parse_json_to_vector'>parse_json_to_vector</a></td>
+                           <td class='docblock-short'>
+                                <p>Helper function to parse a JSON-Value to a Vector of Datasets</p>
+
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt><kbd>?</kbd></dt>
+                    <dd>Show this help dialog</dd>
+                    <dt><kbd>S</kbd></dt>
+                    <dd>Focus the search field</dd>
+                    <dt><kbd>↑</kbd></dt>
+                    <dd>Move up in search results</dd>
+                    <dt><kbd>↓</kbd></dt>
+                    <dd>Move down in search results</dd>
+                    <dt><kbd>↹</kbd></dt>
+                    <dd>Switch tab</dd>
+                    <dt><kbd>&#9166;</kbd></dt>
+                    <dd>Go to active search result</dd>
+                    <dt><kbd>+</kbd></dt>
+                    <dd>Expand all sections</dd>
+                    <dt><kbd>-</kbd></dt>
+                    <dd>Collapse all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "cryptocompare";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
