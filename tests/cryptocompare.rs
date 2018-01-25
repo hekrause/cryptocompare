@@ -7,7 +7,6 @@ use cryptocompare::Options;
 
 #[test]
 fn test_get_coin_list() {
-
     let result = cryptocompare::get_coin_list();
     assert_eq!(result.is_err(), false)
 }
