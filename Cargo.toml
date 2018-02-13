@@ -2,6 +2,12 @@
 name = "cryptocompare"
 version = "0.1.0"
 authors = ["hekrause <hekrause@htwg-konstanz.de>"]
+repository = "https://github.com/hekrause/cryptocompare"
+documentation = "https://hekrause.github.io/doc/cryptocompare/cryptocompare/"
+description = """
+An rust API-Wrapper for the CryptoCompare API.
+"""
+
 
 [dependencies]
 reqwest = "0.8.1"
