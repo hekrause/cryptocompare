@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["hekrause <hekrause@htwg-konstanz.de>"]
 repository = "https://github.com/hekrause/cryptocompare"
 documentation = "https://hekrause.github.io/doc/cryptocompare/cryptocompare/"
+license = "The Unlicense"
 description = """
 An rust API-Wrapper for the CryptoCompare API.
 """
